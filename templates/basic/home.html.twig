@@ -1,0 +1,11 @@
+{% extends'base.html.twig' %}
+
+{% block content %}
+    <div class="row">
+    {% for category in categories %}
+        <a class="col-4 text-center border border-dark py-5" href="home.html.twig">
+        {{ category.type }}
+        </a>
+    {% endfor %}
+    </div>
+{% endblock %}
