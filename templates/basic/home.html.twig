@@ -3,8 +3,7 @@
 {% block content %}
     <div class="row">
     {% for category in categories %}
-        <a class="col-4 text-center border border-dark py-5" href="home.html.twig">
-        {{ category.type }}
+        <a class="col-4 text-center border border-dark py-5" href="{{ path('subpage', {'id': category.id}) }}">{{ category.type }}>
         </a>
     {% endfor %}
     </div>
